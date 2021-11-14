@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./assets/logo.ico.png">
+    <link rel="stylesheet" href="style.css" />
+    <title>GAMINGSTORE</title>
+  </head>
+  <body>
+    <header class="contenedor">
+      <div class="logo">
+        <h1><a href="index.html">GAMINGSTORE</a></h1>
+        <img src="./assets/klipartz.com.png" />
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="#productos">Productos</a></li>
+          <!-- <li><a href="">Pc Armadas</a></li> -->
+          <li><a href="login.html">Mi Cuenta</a></li>
+          <li><a href="register.html">Registrarse</a></li>
+          <!-- i<l><a href=""><i class="fab fa-instagram"></i></a></li>
+          <li><a href=""><i class="fab fa-facebook-square"></i></a></li> -->
+          <div class="icons">
+            <span
+              ><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a
+            ></span>
+            <span
+              ><a href="https://www.faceboook.com" target="_blank"><i class="fab fa-facebook-square"></i></a
+            ></span>
+          </div>
+        </ul>
+      </nav>
+
+      <nav class="menu2">
+        <i class="fas fa-bars"></i>
+        <ul class="dropdown">
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="login.html">Mi Cuenta</a></li>
+          <li><a href="register.html">Registrarse</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./assets/hx-hero-memory-predator-ddr4-rgb-lg.jpg"
+            class="d-block w-100"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/pc_para_streaming_gaming.jpg"
+            class="d-block w-100"
+          />
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/wp2503313.jpg" class="d-block w-100" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <main>
+      <div class="banner">
+        <img src="./assets/Header-Banner.jpg" />
+      </div>
+
+      <section class="section-product">
+        <h2 id="productos">Nuestros Productos</h2>
+        <div class="products">
+          <figure class="product" id="productos">
+            <div class="imgContainer">
+              <img src="./assets/rtx 3060 12gb.jpg" />
+            </div>
+            <p class="description">
+              <a href="producto1.html">Placa de video GEFORCE XT3060</a>
+            </p>
+            <p class="price">$100.000</p>
+            <a class="boton" href="producto1.html">Ver más</a>
+          </figure>
+
+          <figure class="product">
+            <div class="imgContainer">
+              <img src="./assets/mouse.png" />
+            </div>
+            <p class="description"><a href="#">Mouse hyperx FPS PRO</a></p>
+            <p class="price">$4.000</p>
+            <a class="boton" href="producto2.html">Ver más</a>
+          </figure>
+
+          <figure class="product">
+            <div class="imgContainer">
+              <img src="./assets/notebook.jpg" />
+            </div>
+            <p class="description"><a href="#">Notebook Gamer Asus rog</a></p>
+            <p class="price">$200.000</p>
+            <a class="boton" href="producto3.html">Ver más</a>
+          </figure>
+
+          <figure class="product">
+            <div class="imgContainer">
+              <img src="./assets/memoria ram.jpg" />
+            </div>
+            <p class="description"><a href="#">Memoria hyperx 8gb</a></p>
+            <p class="price">$8.000</p>
+            <a class="boton" href="producto4.html">Ver más</a>
+          </figure>
+
+          <figure class="product">
+            <div class="imgContainer">
+              <img src="./assets/gabinete.jpg" />
+            </div>
+            <p class="description"><a href="#">Gabinete Gamer Raidmax</a></p>
+            <p class="price">$9.500</p>
+            <a class="boton" href="producto5.html">Ver más</a>>
+          </figure>
+
+          <figure class="product">
+            <div class="imgContainer">
+              <img src="./assets/procesador.jpg" />
+            </div>
+            <p class="description">
+              <a href="#">Procesador Intel core i9 10th</a>
+            </p>
+            <p class="price">27.000</p>
+            <a class="boton" href="producto6.html">Ver más</a>
+          </figure>
+        </div>
+      </section>
+
+      <img class="banner2" src="./assets/Banner3HyperX.jpg" />
+
+      <form class="formulario">
+        <h3>Formulario de Contacto</h3>
+        <section class="content-form">
+          <label for="">
+            <input class="entradas" type="text" placeholder="Email" />
+          </label>
+          <label for="">
+            <input class="entradas" type="text" placeholder="asunto" />
+          </label>
+            <textarea
+              name=""
+              id=""
+              cols="60"
+              rows="8"
+              placeholder="Escribenos su mensaje"
+            ></textarea>
+          <button>Enviar</button>
+        </section>
+      </form>
+
+      <footer>
+        <div class="icons2">
+         <a href="http://www.facebook.com" target="_blank" ><img src="./assets/facebook.png"/></a> 
+         <a href="http://www.instagram.com" target="_blank" ><img src="./assets/instagram.png"/></a>
+          <a href="http://www.twitter.com" target="_blank"><img src="./assets/twitter.png" /></a>
+        </div>
+       <a href="mailto:sergiogodoy@gmail.com" target="_blank">&copy; Sergio Pablo Godoy NUCBA</a>
+        >
+      </footer>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

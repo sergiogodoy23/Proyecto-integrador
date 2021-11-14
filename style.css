@@ -1,0 +1,718 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Roboto+Condensed&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Poppins', sans-serif;
+}
+
+
+:root{
+    --rich-black-fogra-39: #0b090aff;
+    --eerie-black: #161a1dff;
+    --blood-red: #660708ff;
+    --ruby-red: #a4161aff;
+    --carnelian: #ba181bff;
+    --imperial-red: #ec0f13;
+    --silver-chalice: #b1a7a6ff;
+    --light-gray: #d3d3d3ff;
+    --cultured: #f5f3f4ff;
+    --white: #ffffffff;
+}
+
+
+.contenedor{
+    background-color: var(--eerie-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.contenedor a{
+    text-decoration: none;
+    color: #f00;
+}
+
+.contenedor img{
+    width: 70px;
+    height: 80px;
+}
+
+
+.menu ul li{
+    display: inline;
+    padding-right: 25px;
+    list-style: none;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight:300;
+    position: relative;
+}
+
+.menu li a::after{
+    content: "";
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    transform-origin:right;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+
+
+
+.menu a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.icons{
+  display: inline;
+}
+
+
+.menu2 {
+    display: none;
+}
+
+.icons span i{
+    color: #d60d0d;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+
+.carousel img{
+    height: 550px;
+}
+
+
+.banner{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.products{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    width: 230px;
+    height: 350px;
+    margin: 20px;
+}
+
+.imgContainer img{
+    padding-top: 10px;
+    width: 90%;
+    height: 190px;
+}
+
+.description{
+    padding-top: 15px;
+    font-weight: 900;
+}
+
+.description a {
+    text-decoration: none;
+    color: #dd1e1e;
+}
+
+.price{
+    color: #fff;
+}
+
+
+.boton{
+    background-color: #dd1e1e;
+    width: 80%;
+    border-radius: 10px;
+    padding: 2px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.boton:hover{
+    background-color: #9c1212;
+    color: #fff;
+}
+
+.section-product h2{
+    text-align: center;
+    padding-top: 50px;
+    color: #dd1e1e;
+}
+
+.producto1{
+    width: 80%; 
+    height: 80vh; 
+    background-color: rgb(0, 0, 0);
+    margin: 10px auto;
+    display: flex;
+}   
+
+.producto1 img{
+    width: 40%;
+    height: 90%;
+    margin: auto 5%;
+}
+
+.producto-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 5%;
+    color: #fff;
+}
+
+.producto-info h1{
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.producto-info .stock{
+    color: #dd1e1e;
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+.producto-info p{
+    margin-top: 50px;
+    font-size: 2em;
+}
+
+.producto-info button{
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #dd1e1e;
+    cursor: pointer;
+}
+
+.producto-info button:hover{
+    background-color: #9c1212;
+}
+
+
+.banner2{
+    width: 100%;
+    height: 300px;
+}
+
+.formulario {
+    width: 100%;
+    margin-top: 5%;
+    background-color: #000;
+}
+
+.formulario h3{
+    color: #dd1e1e;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 900;
+    font-size: 2em;
+    letter-spacing: 2px;
+
+}
+
+.content-form{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: auto;
+}
+
+ .entradas{
+   width: 400px;
+   padding: 10px;
+   margin: 20px;
+   outline: none;
+ }
+
+ textarea{
+     padding: 10px;
+     outline: none;
+ }
+
+.content-form button{
+    margin: 20px 0;
+    padding: 10px 80px;
+    border: none;
+    border-radius: 100px;
+    background-color: #dd1e1e;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.content-form button:hover{
+    background-color: #9c1212;
+}
+
+
+footer{
+    width: 100%;
+    height: 30vh;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0d0d;
+}
+
+.icons2 img{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+} 
+
+
+
+footer a{
+    padding-top: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover{
+    color: #dd1e1e;
+}
+
+
+.login{
+    width: 350px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+
+.login h2{
+    padding-top: 50px;
+    color: #dd1e1e; 
+    font-size: 2em;
+
+}
+
+.entradas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.entradas input{
+    padding: 10px;
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid #dd1e1e;
+    border-radius: 10px;
+}
+
+.login a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.login a:hover{
+    text-decoration: underline #dd1e1e;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    width: 90%
+}
+
+.botones button{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #dd1e1e;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.botones button:hover{
+    cursor: pointer;
+    background-color: #9c1212;
+}
+
+.register{
+    width: 350px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+
+.register h2 {
+    color: #dd1e1e;
+    margin: 20px;
+    font-size: 2em;
+}
+
+.entradas2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.entradas2 input{
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid #dd1e1e;
+}
+
+.register button{
+    width: 85%;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: #dd1e1e;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.register button:hover{
+    cursor: pointer;
+    background-color: #9c1212;
+}
+
+@media  (max-width: 768px) {
+    h1{
+        font-size: 30px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    header a {
+        text-decoration: none;
+        color: rgb(248, 11, 11);
+        text-align: center;
+    }
+    
+    
+    header i {
+        color: #f6faf7;
+        font-size: 1.5em;
+
+    }
+
+
+    .menu2{
+        position: relative;
+        display: inline-block;
+        margin-left: auto;
+        font-size: 1em;
+        margin-right: 1%;
+    }
+    
+    .menu2 a {
+        color: #ffffff;
+    }
+    
+    
+    .dropdown {
+        display: none;
+        position: absolute;
+        background-color: #dd1e1e;
+        min-width: 160px;
+        padding: 12px 16px;
+        z-index: 5;
+        top: 30px;
+        right: -30px;
+    }
+    
+    .menu2:hover .dropdown{
+        display: block;
+    }
+    
+    .dropdown li {
+        padding: 10px;
+        list-style: none;
+        font-size: 1.5;
+        font-weight: bold;
+    }
+
+    .banner{
+        height: 180px;
+    }
+
+    .banner2{
+        height: 180px;
+    }
+
+    .formulario h3{
+        font-size: 25px;
+    
+    }
+    
+    .formulario input{
+        padding: 5px;
+    }
+
+    .formulario textarea{
+        width: 70%;
+    }
+
+    footer{
+        height: 200px;
+    }
+
+    .login{
+      margin-top: 10px;
+    }
+
+    .register{
+        margin-top: 10px;
+    }
+    
+    .producto1{
+          align-items: center;  
+    }
+
+     .producto1 img{
+        height: 60%;
+    }
+
+    .producto1 h1{
+        font-size: 23px;
+        text-align: center;
+    }
+     
+}
+
+@media (max-width: 480px) {
+    .carousel img{
+        height: 250px;
+    }
+
+    .banner{
+    height: 120px; 
+    }
+
+    .product{
+        width: 270px; 
+    }
+
+    .banner2{
+        height: 150px;
+    }
+
+
+    .formulario h3{
+        font-size: 23px;
+    }
+
+    .formulario input{
+        padding: 2%;
+        border-radius: 5px;
+    }
+
+    .formulario textarea{
+        width: 70%;
+        height: 150px;
+    }
+
+    .formulario button{
+        padding: 10px 40px;
+    }
+
+    .login{
+        width: 300px;
+    }
+
+    .entradas input{
+        padding: 8px;
+    }
+
+    .botones button{
+        padding: 8px;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .register{
+        width: 300px;
+    }
+    
+    .entradas2 input{
+        padding: 10px 15px;
+        margin-bottom: 20px;
+    }
+
+    .register button{
+        width: 70%;
+    }
+
+    .producto1{
+        flex-direction: column;
+    }
+
+    .producto1 img{
+        margin-top: 0px;
+        width: 200px;
+        height: 250px;
+    }
+
+
+    .producto-info p{
+        margin-top: 5px;
+    }
+
+    .producto1 .stock{
+        margin-top:10px;
+    }
+
+    .producto1 button{
+        padding: 10px;
+        width: 60%;
+    }
+}
+
+@media (max-width:360px) {
+    .logo h1{
+        font-size: 25px;
+    }
+
+    .logo img{
+        width: 50px;
+        height: 60px;
+    }
+
+    .carousel img{
+        height: 200px;
+    }
+
+    .banner{
+        height: 100px;
+    }
+
+    .banner2{
+        height: 100px;
+    }
+
+
+    .content-form{
+        width: 100%;
+    }
+
+    .formulario h3{
+        font-size: 20px;
+    }
+
+    .formulario input{
+        width: 80%;
+    }
+
+    .formulario textarea{
+        width: 60%;
+    }
+
+    .formulario button{
+        font-size: 15px;
+        padding: 5px 30px;
+    }
+
+    .icons2 img{
+        width: 35px;
+        height: 30px;
+    }
+
+    .login{
+        width: 270px;
+    }
+
+    .register{
+        width: 270px;
+    }
+    
+    .register h2{
+        font-size: 25px;
+
+    }
+
+    .producto1 img{
+        margin-top: 5px;
+    }
+
+    .producto1 h1{
+        font-size: 20px;
+    }
+    .producto1 .stock{
+        margin: 0;
+        font-size: 17px;
+    }
+
+    .producto1 p {
+        font-size: 22px;
+    }
+
+    .producto1 button{
+        padding: 5px;
+        font-size: 15px;
+    }
+    
+}
+
